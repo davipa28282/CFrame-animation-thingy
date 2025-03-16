@@ -361,7 +361,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
 	if not busy then
 		local Head = game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head")
 		if Head then
-			workspace.CurrentCamera.CameraSubject = game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPArt")
+			workspace.CurrentCamera.CameraSubject = game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 		end
 	else
 		workspace.CurrentCamera.CameraSubject = CamPart
