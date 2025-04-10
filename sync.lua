@@ -1,5 +1,5 @@
 --//Paste script below this line.
-
+warn("updated")
 warn("Star Glitcher Loaded.")
 warn("All purpose switcher...")
 warn("Edit By Frepix.")
