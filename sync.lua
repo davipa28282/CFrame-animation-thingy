@@ -1,4 +1,5 @@
 --//Paste script below this line.
+--setclipboard(game:HttpGet("https://raw.githubusercontent.com/davipa28282/CFrame-animation-thingy/refs/heads/main/sync.lua))
 warn("updated")
 warn("Star Glitcher Loaded.")
 warn("All purpose switcher...")
