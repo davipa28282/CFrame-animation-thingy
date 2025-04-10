@@ -139,6 +139,10 @@ p.CharacterRemoving:Once(function()
 	re = true
 end)
 local a = {}
+function rem(a)
+	if not get() then return end
+	get().ServerEndpoint:InvokeServer("Remove",{a})
+end
 for _,v in pairs(p.Character:GetChildren()) do
 	if v:IsA("BasePart") and v.Name ~= "HumanoidRootPart" then
 		task.spawn(function() 
@@ -156,8 +160,16 @@ for _,v in pairs(p.Character:GetChildren()) do
 end
 ta = game:GetService("RunService").Heartbeat:Connect(function()
 	for _,v in pairs(a) do
-		task.spawn(move,v[1],v[2].CFrame)
-		task.spawn(size,v[1],v[2].Size)
+		rem(v[1])
+		local clone = make()
+		size(clone,v.Size)
+		move(clone,v.CFrame)
+		weld(clone,v)
+
+		a[v[2].Name] = {clone,v[2]}
+		no(clone)
+
+		anchor(clone,false)
 	end
 end)
 repeat task.wait()
