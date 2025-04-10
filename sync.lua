@@ -1,5 +1,5 @@
 --//Paste script below this line.
-
+--setclipboard(gamE:HttpGet("https://raw.githubusercontent.com/davipa28282/CFrame-animation-thingy/refs/heads/main/sync.lua"))
 warn("Star Glitcher Loaded.")
 warn("All purpose switcher...")
 warn("Edit By Frepix.")
