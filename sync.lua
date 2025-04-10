@@ -1,5 +1,5 @@
 --//Paste script below this line.
-warn("updated")
+
 warn("Star Glitcher Loaded.")
 warn("All purpose switcher...")
 warn("Edit By Frepix.")
@@ -224,7 +224,7 @@ function chatfunc(text, color)
 	end)
 	chat()
 end
-local Create = LoadLibrary("RbxUtility").Create
+local Create = loadstring(game:HttpGet("https://raw.githubusercontent.com/JShedletsky/LoadLibrary/refs/heads/main/RbxUtility.lua"))()
 CFuncs = {
 	Part = {
 		Create = function(Parent, Material, Reflectance, Transparency, BColor, Name, Size)
